@@ -1,0 +1,111 @@
+*{
+	padding: 0;
+	
+}
+
+.logo
+{
+	left: 50%;
+	transform: translate(-50%);
+}
+
+body{
+	margin: 0px;
+	padding: 0px;
+	background-size: cover;
+	background-position: center;
+	font-family: sans-serif;
+}
+h1 {
+ 
+ color: black;
+ padding: 10px;
+}
+img
+{
+display: inline-block;
+	position: absolute;
+}
+nav ul{
+	background-color: #4169E1;
+	width:100%;
+	list-style-type: none;
+	text-align: center;
+	vertical-align: middle;
+	font-style: italic;
+}
+nav li {
+	display: inline-flex; .
+	transition: all 0.5s;
+	font-style: italic;
+}
+nav a {
+	text-decoration:none;
+	color: white;
+	padding: 10px;
+	width: 150px;
+	font-style: italic;
+}
+nav li:hover {
+	background-color: blue;
+}
+input{
+	padding: 10px;
+	margin: 10px;
+}
+input:hover {
+
+background-color: blue;
+	
+}
+ 
+.return{
+	color: #5499C7;
+}
+}
+.return:hover{
+	background-color: blue;
+	
+}
+#resultado{
+ width: 150px;
+ height: 150px;
+ margin-top:150px;
+ margin-left:150px;
+ border:2px solid; 
+}
+img#esfera{
+	 width: 400px;
+ height: 400px;
+ margin-top:0px;
+ margin-left: 400px;
+ border:0px solid; 
+}
+img#celi{
+	 width: 400px;
+ height: 400px;
+ margin-top:70px;
+ margin-left: -480px;
+ border:0px solid; 
+}
+img#toro{
+	 width: 400px;
+ height: 300px;
+ margin-top:0px;
+ margin-left: 430px;
+ border:0px solid; 
+}
+img#cubo{
+	 width: 400px;
+ height: 300px;
+ margin-top:0px;
+ margin-left: -200px;
+ border:0px solid; 
+}
+img#pri{
+	 width: 400px;
+ height: 300px;
+ margin-top:0px;
+ margin-left: 440px;
+ border:0px solid; 
+}

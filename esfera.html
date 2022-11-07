@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="messi.css">
+	<title>Calculadora de volumenes</title>
+</head>
+<body>
+    <img src="logo.png" class="logo">
+   <h1></h1>
+    <nav>
+        <ul>
+            <li><a href="cilindros.html">Cilindro</a></li>
+            <li><a href="cubo.html">Cubo</a></li>
+            <li><a href="prisma.html">Prisma</a></li>
+            <li><a href="toroide.html">Toroide</a></li>
+            <li><a href="suma.html">/ * + -</a></li>
+            <li><a href="juego.html">game</a></li>
+
+        </ul>
+
+    </nav>
+    <nav>
+<input type="text" id="n1" placeholder="Radio"></input>
+<input type="text" id="res" placeholder="Resultado"></input>
+
+<input type="button" value="calcular" id="btn"></input>
+<li><a class="return" href="index.html">menu</a></li>
+<h3></h3>
+<img src="formula-del-volumen-de-una-esfera.png" id="esfera">
+
+<script type="text/javascript">
+
+	var btn=document.getElementById('btn');
+	btn.addEventListener('click',suma);
+function suma()
+{
+    var pi= 3.1416;
+	var n1=parseFloat(document.getElementById('n1').value);
+    var res=document.getElementById('res');
+    res.value= 4 / 3 * pi * (n1 * n1 * n1);
+
+}
+
+
+</script>
+
+</body>
+</html>

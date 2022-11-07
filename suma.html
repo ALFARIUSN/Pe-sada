@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="messi.css">
+	<title>Calculadora de volumenes</title>
+</head>
+<body>
+    <img src="logo.png" class="logo">
+   <h1></h1>
+    <nav>
+     <nav>
+    	<ul>
+    		<li><a href="cilindros.html">Cilindro</a></li>
+    		<li><a href="cubo.html">Cubo</a></li>
+    		<li><a href="esfera.html">Esfera</a></li>
+    		<li><a href="prisma.html">Prisma</a></li>
+            <li><a href="toroide.html">Toroide</a></li>
+            <li><a href="juego.html">game</a></li>
+
+    	</ul>
+
+    </nav>
+<input type="text" id="n1" placeholder="Numero 1" ></input>
+<input type="text" id="n2" placeholder="Numero 2"></input>
+<input type="text" id="res" placeholder="Resultado" ></input>
+
+<input type="button" value="Sumar" id="btn"></input>
+<input type="button" value="Restar" id="res"></input>
+<input type="button" value="Mutiplicar" id="mul"></input>
+<input type="button" value="Dividir" id="di"></input>
+
+
+<li><a class="return" href="index.html">menu</a></li>
+<script type="text/javascript">
+	var btn=document.getElementById('btn');
+	btn.addEventListener('click',suma);
+	var btn=document.getElementById('res');
+	btn.addEventListener('click', Resta);
+	var btn=document.getElementById('mul');
+	btn.addEventListener('click', Mutiplicar);
+	var btn=document.getElementById('di');
+	btn.addEventListener('click', Dividir);
+
+function suma()
+{
+	var n1=parseFloat(document.getElementById('n1').value);
+	var n2=parseFloat(document.getElementById('n2').value);
+    var res=document.getElementById('res');
+    res.value= n1 + n2 ;
+}
+function Resta()
+{
+	var n1=parseFloat(document.getElementById('n1').value);
+	var n2=parseFloat(document.getElementById('n2').value);
+    var res=document.getElementById('res');
+    res.value= n1 - n2 ;
+}
+function Mutiplicar()
+{
+	var n1=parseFloat(document.getElementById('n1').value);
+	var n2=parseFloat(document.getElementById('n2').value);
+    var res=document.getElementById('res');
+    res.value= n1 * n2 ;
+}
+
+function Dividir()
+{
+	var n1=parseFloat(document.getElementById('n1').value);
+	var n2=parseFloat(document.getElementById('n2').value);
+    var res=document.getElementById('res');
+    res.value= n1 / n2 ;
+
+}
+</script>
+</body>
+</html>

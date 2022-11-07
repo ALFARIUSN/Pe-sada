@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="messi.css">
+	<img src="logo.png" class="logo">
+   <h1></h1>
+    <nav>
+     <nav>
+        <ul>
+            <li><a href="cilindros.html">Cilindro</a></li>
+            <li><a href="cubo.html">Cubo</a></li>
+            <li><a href="esfera.html">Esfera</a></li>
+            <li><a href="prisma.html">Prisma</a></li>
+            <li><a href="suma.html">/ * + -</a></li>
+            <li><a href="juego.html">game</a></li>
+
+        </ul>
+
+    </nav>
+
+<input type="text" id="n1" placeholder="Radio directriz" ></input>
+<input type="text" id="n2" placeholder="Radio generatriz"></input>
+<input type="text" id="res" placeholder="Resultado"></input>
+
+<input type="button" value="calcular" id="btn"></input>
+<li><a class="return" href="index.html">menu</a></li>
+<h1></h1>
+<img src="TORO-1.png" id="toro">
+<script type="text/javascript">
+	var btn=document.getElementById('btn');
+	btn.addEventListener('click',suma);
+function suma()
+{
+    var pi= 3.1416;
+	var n1=parseFloat(document.getElementById('n1').value);
+    var n2=parseFloat(document.getElementById('n2').value);
+    var res=document.getElementById('res');
+    res.value= 2 * pi * pi * n1 * n2 * n2;
+    
+}
+
+</script>
+
+</body>
+</html>
